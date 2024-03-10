@@ -12,12 +12,13 @@ flush privileges;
 
 create table cinefide.usuario(
 id_usuario int NOT NULL Auto_Increment primary key, 
-username  varchar(50),    
+username  varchar(50) UNIQUE,    
 nombre  varchar(50), 
 apellidos  varchar(100),
 contrasena  varchar(50), 
-correo  varchar(100), 
-fecha varchar(30))
+correo  varchar(100) UNIQUE, 
+fecha varchar(30),
+tipo INT DEFAULT 1)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 

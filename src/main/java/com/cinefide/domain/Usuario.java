@@ -20,4 +20,5 @@ public class Usuario implements Serializable{
     private String contrasena;
     private String correo;
     private String fecha;
+    private Integer tipo;
 }
