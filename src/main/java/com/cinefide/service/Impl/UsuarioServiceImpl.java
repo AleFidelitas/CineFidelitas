@@ -19,9 +19,7 @@ public class UsuarioServiceImpl implements UsuarioService{
     public List<Usuario> getUsuario(boolean activo) {
         var lista=usuarioDao.findAll();
         
-        if (activo){
-            lista.removeIf(c -> !c.isActivo());
-        }
+  
         
         
         return lista;
