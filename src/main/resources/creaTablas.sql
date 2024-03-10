@@ -18,9 +18,3 @@ fecha varchar(30))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 
-create table cinefide.cartelera(
-id_pelicula int NOT NULL Auto_Increment primary key, 
-titulo  varchar(50), 
-imagen  varchar(3000),
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb4;
