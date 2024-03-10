@@ -17,4 +17,7 @@ public class Cartelera implements Serializable{
   
     private String titulo;
     private String imagen;
+    private String descripcion;
+    private String horario;
+    
 }

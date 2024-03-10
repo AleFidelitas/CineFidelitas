@@ -23,21 +23,12 @@ public class CarteleraController {
         var lista = carteleraService.getCartelera(false);
         model.addAttribute("cartelera", lista);
         model.addAttribute("totalCarteleras", lista.size());       
+        
+        var descripcion = carteleraService.getCartelera(false);
+        model.addAttribute("cartelera", lista);
+        
         return "/cartelera/listado";
     }
             
-            
-    @GetMapping("/modificar/{idPelicula}")
-    public String modifica(Cartelera cartelera, Model model){
-        cartelera = carteleraService.getCartelera(cartelera);
-        model.addAttribute("cartelera", cartelera);
-        return "/cartelera/modifica";
-    }
-    
-        @GetMapping("/eliminar/{idPelicula}")
-    public String elimina(Cartelera cartelera){
-        carteleraService.delete(cartelera);
-        return "redirect:/cartelera/listado";
-    }
     
 }
